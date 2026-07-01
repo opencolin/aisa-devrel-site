@@ -7,7 +7,7 @@
 Zero-build static microsite generated from `content.json` by `build.mjs`. Published to GitHub (`opencolin/aisa-devrel-site`) and deployed on Vercel. Content came from a PM-council + section-writer workflow. Site release ladder (v0.1→v2.0) has git worktrees + PLANs.
 
 ## Live URLs
-- **Production (Vercel):** _fill in after deploy_
+- **Production (Vercel):** https://aisa-devrel-site.vercel.app
 - **GitHub:** https://github.com/opencolin/aisa-devrel-site
 
 ## Repo map
