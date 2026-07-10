@@ -51,7 +51,7 @@ function roadmap(releases) {
 
 const navItems = [
   ["setup", "Setup"], ["funding", "Why now"], ["wedge", "Wedge"], ["honesty", "Field notes"], ["programs", "Initiatives"],
-  ["roadmap", "Roadmap"], ["metrics", "Metrics"], ["stack", "Stack"], ["swot", "SWOT"], ["engagement", "Engagement"], ["ladder", "Publish"],
+  ["roadmap", "Roadmap"], ["metrics", "Metrics"], ["stack", "Stack"], ["swot", "SWOT"], ["engagement", "Engagement"],
 ].filter(([id]) => C.sections.some((s) => s.id === id) || id === "ladder" || id === "roadmap");
 
 const order = C.plan?.section_order?.length ? C.plan.section_order : C.sections.map((s) => s.id);
@@ -96,7 +96,6 @@ ${hero.funding_line ? `<a class="newsbar" href="${C.links?.news || "https://aisa
       <div class="northstar"><span class="ns-l">North star</span> ${inline(C.plan?.north_star || C.north_star || "")}</div>
     </header>
     ${orderedSections.map(section).join("\n")}
-    ${roadmap(C.plan?.site_releases)}
     <footer class="foot">
       <p>${inline(C.footer || "AISA DevRel strategy · outside-in proposal.")}</p>
       <p class="foot-sub">Built by a DevRel leader who shaped the developer program at Cisco Meraki, led DevRel at MetaMask, and brings an ~86k-developer community. Source: <a href="${C.links?.repo || "#"}">GitHub</a>.</p>
