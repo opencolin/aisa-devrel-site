@@ -3,16 +3,16 @@
   "hero": {
    "kicker": "DevRel proposal for AISA.one, the resource and transaction network for the AI agent economy",
    "headline": "You raised $6.5M and grew 150x. Now build the developer loop.",
-   "subhead": "AISA is funded, ranked top seller and top server on the x402 agent-payments leaderboard, and adding agents 150x faster than five months ago, all with zero paid marketing. What it does not have yet is a developer brand: no community loop, no builder showcase, and near-zero public stories behind 50,000 registered agents. I built the developer program at Cisco Meraki, led DevRel at MetaMask, and bring an 86,000-developer channel on day one to turn registered agents into paying, multi-capability ones.",
+   "subhead": "AISA is funded, ranked top seller and top server on the x402 agent-payments leaderboard, and adding agents 150x faster than five months ago, all with zero paid marketing. What it does not have yet is a developer brand: no community loop, no builder showcase, and near-zero public stories behind 50,000 registered agents. I'm Colin Lowenberg. I built the developer program at Cisco Meraki, led DevRel at MetaMask, and bring an 86,000-developer channel on day one to turn registered agents into paying, multi-capability ones.",
    "metaline": [
     "50,000+ agents registered with zero paid marketing",
     "150x agent growth and 200x calls plus transactions, Feb to Jun 2026",
     "#1 seller and #1 server on the public x402 leaderboard"
    ],
    "ctas": [
-    "Read the 90-day DevRel plan",
-    "See the north-star metric",
-    "Book a working session"
+    "Start with the $6K pilot",
+    "Read the plan",
+    "See the north-star metric"
    ],
    "funding_line": "$6.5M raised to date, including a new seed round co-led by Alibaba and Tribe Capital, with Draper Associates, Sumitomo, and Saison Capital"
   },
@@ -27,7 +27,8 @@
    "metrics",
    "stack",
    "swot",
-   "engagement"
+   "engagement",
+   "next"
   ],
   "site_releases": [
    {
@@ -125,57 +126,14 @@
      "sub": "New seed co-led by Alibaba and Tribe Capital"
     }
    ],
-   "cards": [
-    {
-     "label": "Working now",
-     "title": "A proven wedge, not a thesis",
-     "detail": "Top of the x402 leaderboard as both seller and server, a named customer in Impossible Finance, and 50k agents reached without ad spend. Capabilities-beyond-tokens plus autonomous payments is validated in production, not on a slide. One key already fans out to 101 models and ~650 data and action endpoints across 14 families."
-    },
-    {
-     "label": "The real gap",
-     "title": "A spike with no loop around it",
-     "detail": "50k registered agents, almost no public builder stories, no Discord loop, no showcase, no visible developer brand. Registration is shallow: a signup is not a multi-capability, paying agent. Provider onboarding (supply side) and enterprise controls (budgets, approvals, audit) have no motion behind them."
-    },
-    {
-     "label": "What the raise funds",
-     "title": "Engineering, payments, supply, enterprise",
-     "detail": "Use of funds: expand engineering, scale payment infrastructure, onboard more model/data/API providers, accelerate stablecoin settlement, and deepen enterprise controls. Two of those (provider supply and enterprise-controls GTM) are DevRel motions that currently have no owner."
-    },
-    {
-     "label": "What DevRel closes",
-     "title": "Durable adoption, not a plateau",
-     "detail": "A developer brand and community loop, activation depth that turns registered agents into weekly multi-capability payers, a two-sided provider-onboarding pipeline, and an enterprise-controls narrative. Plus dabl.club, my ~86k-developer community and newsletter, as a day-one attributed channel with a 36-40% open rate."
-    }
-   ],
+   "cards": [],
    "title": "The setup"
   },
   {
    "id": "funding",
    "kicker": "Why now",
    "heading": "Funded, 150x, top of x402. This is the DevRel window.",
-   "body_md": "On July 3, 2026, AISA announced a new seed round co-led by Alibaba and Tribe Capital, with Draper Associates, Sumitomo Corporation, and Saison Capital participating, bringing total funding to $6.5M. The money is pointed at supply and settlement: scaling payment infrastructure, onboarding more model, data, and API providers, deepening enterprise controls, and accelerating stablecoin settlement. HQ San Francisco, founded 2025.\n\nThe thesis behind that spend is a distribution bet. Jordan Liu, CEO: \"Payment networks win by sitting next to the resources people want to buy. Agents are becoming economic actors that research, call tools, consume data, and pay, and they can't use human signup, subscription, or checkout flows.\" PayPal sat next to eBay. Stripe sat next to commerce. AISA is betting the agent economy needs the same pairing of resources and settlement in one place.\n\nHere is the DevRel argument in one line: capital plus 150x agent growth plus the number one seat on the x402 leaderboard is precisely the moment to build the developer brand, the community loop, and the supply-side provider onboarding, so the spike compounds instead of plateauing. Registered agents are not the goal. The north star is Weekly Active Agents making multi-capability calls, a model route plus at least one data-API family in the same week, payment-weighted once x402 is GA. Not signups, not followers.",
-   "stats": [
-    {
-     "value": "$6.5M",
-     "label": "Raised to date",
-     "sub": "New seed closed July 3, 2026"
-    },
-    {
-     "value": "Alibaba + Tribe",
-     "label": "Co-leads",
-     "sub": "Draper, Sumitomo, Saison also in"
-    },
-    {
-     "value": "150x / 200x",
-     "label": "Feb to Jun 2026",
-     "sub": "Registered agents / API calls + transactions"
-    },
-    {
-     "value": "#1",
-     "label": "x402 public leaderboard",
-     "sub": "Top seller and top server"
-    }
-   ],
+   "body_md": "On July 3, 2026, AISA announced a new seed round co-led by Alibaba and Tribe Capital, with Draper Associates, Sumitomo Corporation, and Saison Capital participating, bringing total funding to $6.5M. The money is pointed at supply and settlement: scaling payment infrastructure, onboarding more model, data, and API providers, deepening enterprise controls, and accelerating stablecoin settlement. HQ San Francisco, founded 2025.\n\nThe thesis behind that spend is a distribution bet. Jordan Liu's framing: PayPal sat next to eBay. Stripe sat next to commerce. AISA is betting the agent economy needs the same pairing of resources and settlement in one place.\n\nHere is the DevRel argument in one line: capital plus 150x agent growth plus the number one seat on the x402 leaderboard is precisely the moment to build the developer brand, the community loop, and the supply-side provider onboarding, so the spike compounds instead of plateauing. Registered agents are not the goal. The north star is",
    "cards": [
     {
      "label": "Use of funds",
@@ -188,56 +146,23 @@
      "detail": "Capital plus 150x growth plus the top seat on x402 is the moment to stand up a developer brand, a community loop, and two-sided provider onboarding. Traction this steep either compounds into durable adoption or flattens once the novelty fades. DevRel decides which."
     },
     {
-     "label": "The gap",
-     "title": "What 50,000 agents still lack",
-     "detail": "No Discord loop, no showcase, near-zero public builder stories despite 50k+ registered agents and one named customer in Impossible Finance. Activation is shallow (registered, not multi-capability paying), provider supply is thin, and enterprise controls have no GTM. That gap is the DevRel surface."
-    },
-    {
      "label": "Press",
      "title": "Covered in Forbes",
      "detail": "Forbes (Jul 3, 2026): \"Startup Raises $6.5 Million By Making It Easier For AI Employees To Make Payments Online.\" The agent-as-economic-actor framing is now a mainstream-press narrative, not just a developer thesis, which widens the top of funnel and the enterprise conversation."
     }
    ],
-   "title": "Why now"
+   "title": "Why now",
+   "quote": {
+    "text": "Payment networks win by sitting next to the resources people want to buy. Agents are becoming economic actors that research, call tools, consume data, and pay, and they can't use human signup, subscription, or checkout flows.",
+    "attribution": "Jordan Liu, Founder & CEO, AISA"
+   }
   },
   {
    "id": "wedge",
    "kicker": "The real wedge",
    "heading": "Not cheap tokens. Capabilities plus payments, behind one key.",
    "body_md": "Model routing is a commodity. OpenRouter and the Vercel AI Gateway already do it, and the price of an inference call trends to zero. If AISA's pitch were \"same models, a few points cheaper,\" there would be no company here. That is not the wedge.\n\nThe wedge is everything an agent needs *after* the token: one API key that fans out to 101 models across 13 providers **and** roughly 650 data and action endpoints across 14 families **and** an autonomous payment layer that meters usage and settles in fiat or stablecoins. Agents are economic actors now. They research, call tools, consume data, and pay, but they cannot use human signup, subscription, or checkout flows. AISA sits next to the resources and does the paying. That is the PayPal-next-to-eBay, Stripe-next-to-commerce move, aimed at agents.\n\nThis is no longer theory. AISA ranks **#1 seller and #1 server on the public x402 leaderboard**, integrates the Circle, Visa, and Stripe agent-payment initiatives, and has a named customer, Impossible Finance, hitting models, data, and APIs through the single interface and paying per use. A pure token router cannot follow without becoming a different company: a metered settlement layer plus 650 data endpoints plus enterprise spend controls is not a feature flag on a routing margin. And Alibaba co-leading the seed lines up with a Chinese-LLM catalog (Qwen, DeepSeek, GLM) that a US-only gateway will not casually replicate.",
-   "stats": [
-    {
-     "value": "#1",
-     "label": "x402 leaderboard",
-     "sub": "Top seller AND top server, not a projection"
-    },
-    {
-     "value": "~650",
-     "label": "Data + action endpoints",
-     "sub": "14 families, on the same key as the models"
-    },
-    {
-     "value": "3",
-     "label": "Agent-payment initiatives integrated",
-     "sub": "Circle, Visa, Stripe"
-    },
-    {
-     "value": "1",
-     "label": "Named customer, live",
-     "sub": "Impossible Finance, pay-per-use through one interface"
-    }
-   ],
    "cards": [
-    {
-     "label": "Capabilities, not tokens",
-     "title": "One key routes models and calls the world",
-     "detail": "The model gateway (101 models behind an OpenAI-compatible API endpoint) is table stakes. The moat is the ~650 data and action endpoints beside it: DataForSEO, Apollo, AgentMail, Twitter, Financial, CoinGecko, Polymarket, Tavily, Perplexity, Kalshi. Gateways route tokens. AISA lets an agent route a model and pull live data in the same session, on the same key."
-    },
-    {
-     "label": "Autonomous payments",
-     "title": "The settlement layer agents actually need",
-     "detail": "x402/HTTP-402, Circle Nanopayments, and MPP meter usage and settle without a human at a checkout. The x402 #1-seller-and-server ranking is proof the rail carries real volume. Adding this to a token router means building a payments company underneath a routing margin, which is why OpenRouter and Vercel AI Gateway do not."
-    },
     {
      "label": "Supply-side moat",
      "title": "Alibaba backing, Chinese-LLM depth",
@@ -305,70 +230,15 @@
    "id": "honesty",
    "kicker": "Field notes",
    "heading": "What I found dogfooding, and what has changed since",
-   "body_md": "I ran the product the way a new agent builder would: logged out, cold, no allowances made. Honesty is the trust engine that compounds, so here is exactly what I saw, including what AISA has already fixed. When I first opened /models it rendered \"0 models\" for anonymous visitors. That was a P0 — a drop-everything bug — on the exact surface where a builder decides whether the gateway is real. You fixed it. It now renders 101 models across 13 providers, and one API key still fronts roughly 650 data and action endpoints across 14 families plus 41 packaged skills. Credit where it is due: the thing I flagged as the front-door failure is closed.\n\nOne rough edge is left, and it is minor: the logged-out \"Recommended\" preset still fails with an error for logged-out visitors. The rest of the page loads, so this is a papercut, not a wall. Machine-to-machine payments (x402, Circle Nanopayments, and MPP, the Machine Payments Protocol) are still Private Beta, and Foundry is still Coming Soon. I am noting those as state, not as complaints. This is what a candid before/after looks like from someone who wants the north star to move: Weekly Active Agents making multi-capability calls, payment-weighted once x402 is GA. Not signups, not followers.",
-   "cards": [
-    {
-     "label": "Fixed (before / after)",
-     "title": "/models went from \"0 models\" to 101 across 13 providers",
-     "detail": "On first review the logged-out /models page rendered \"0 models\" on the surface where a builder decides if the gateway is real. It is now resolved and renders the full 101-model, 13-provider catalog. The one glitch left is cosmetic: the logged-out \"Recommended\" preset still fails with an error for logged-out visitors."
-    },
-    {
-     "label": "Positioning",
-     "title": "The wedge is capabilities plus payments, not cheap tokens",
-     "detail": "Model routing is a commodity against OpenRouter and Vercel AI Gateway. What is defensible is the ~650 data and action endpoints, autonomous settlement, and agent-native distribution. This is no longer theory: #1 top seller and top server on the x402 leaderboard, plus a named customer in Impossible Finance. The story to tell builders is capabilities-beyond-tokens, not price per million."
-    },
-    {
-     "label": "Day-one move",
-     "title": "Turn honesty into the activation loop",
-     "detail": "50,000+ registered agents arrived with zero paid marketing, but registration is not the north star. The gap is depth: getting a registered agent to make a model call plus at least one data-API call in the same week. Ship a public changelog that logs fixes like the /models repair in the open, fix the logged-out \"Recommended\" error, and instrument multi-capability activation from day one so the 150x/200x curve becomes durable adoption instead of a plateau."
-    }
-   ],
-   "stats": [
-    {
-     "value": "0 to 101",
-     "label": "Models on /models after the fix",
-     "sub": "across 13 providers, logged out"
-    },
-    {
-     "value": "~650",
-     "label": "Data + action endpoints, one key",
-     "sub": "14 families plus 41 packaged skills"
-    },
-    {
-     "value": "#1",
-     "label": "x402 leaderboard, seller and server",
-     "sub": "proof the wedge is real, not theoretical"
-    }
-   ],
+   "body_md": "I ran the product the way a new agent builder would: logged out, cold, no allowances made. Honesty is the trust engine that compounds, so here is exactly what I saw, including what AISA has already fixed. When I first opened /models it rendered \"0 models\" for anonymous visitors. That was a P0 — a drop-everything bug — on the exact surface where a builder decides whether the gateway is real. You fixed it. It now renders 101 models across 13 providers, and one API key still fronts roughly 650 data and action endpoints across 14 families plus 41 packaged skills. Credit where it is due: the thing I flagged as the front-door failure is closed.\n\nOne rough edge is left, and it is minor: the logged-out \"Recommended\" preset still fails with an error for logged-out visitors. The rest of the page loads, so this is a papercut, not a wall. Machine-to-machine payments (x402, Circle Nanopayments, and MPP, the Machine Payments Protocol) are still Private Beta, and Foundry is still Coming Soon. I am noting those as state, not as complaints. This is what a candid before/after looks like from someone who wants the north star to move:",
+   "cards": [],
    "title": "Field notes"
   },
   {
    "id": "programs",
    "kicker": "The initiatives",
    "heading": "Seven programs, sequenced. Each one moves a single lever toward Weekly Active Agents.",
-   "body_md": "/models renders 101 models across 13 providers; the only crack left is a logged-out Recommended preset that 404s for anonymous visitors. AISA is funded ($6.5M raised to date, seed co-led by Alibaba and Tribe Capital), 50,000+ agents registered with zero paid marketing, 150x user growth and 200x call and transaction growth Feb to Jun, ranked #1 top seller and top server on the x402 leaderboard, with Impossible Finance as a named paying customer. So the first phase is about locking honest numbers, instrumenting the funnel, and pouring the community foundation that 50k agents currently do not have.\n\nEvery initiative below is scored against one north star: Weekly Active Agents making multi-capability calls, a model route plus at least one data-API family in the same week, payment-weighted once x402 is GA. Not signups. Not followers. The sequence is strict because it has to be: instrument before you spend, activate depth before you scale distribution, build the loop before you launch it, onboard supply before demand outruns it, earn enterprise trust before you meter money, ship payments GA before you can compound.\n\nThe one structural addition to the plan is a two-sided provider-onboarding program. The raise explicitly funds onboarding more model, data, and API providers. That is a supply-side DevRel motion with its own audience and its own metric, and it does not exist yet.",
-   "stats": [
-    {
-     "value": "101 / 13",
-     "label": "Models live across providers",
-     "sub": "/models fixed, catalog renders honest counts"
-    },
-    {
-     "value": "~650 / 14",
-     "label": "Data-API endpoints across families",
-     "sub": "one key: DataForSEO 445, Apollo 54, AgentMail 46, more"
-    },
-    {
-     "value": "50,000+",
-     "label": "Registered agents, zero paid marketing",
-     "sub": "150x users, 200x calls and transactions, Feb to Jun 2026"
-    },
-    {
-     "value": "#1",
-     "label": "Top seller and top server on x402",
-     "sub": "Impossible Finance named as paying customer"
-    }
-   ],
+   "body_md": "/models renders 101 models across 13 providers; the only crack left is a logged-out Recommended preset that 404s for anonymous visitors. Given the funding and traction above, the first phase is about locking honest numbers, instrumenting the funnel, and pouring the community foundation that 50k agents currently do not have.\n\nThe one structural addition to the plan is a two-sided provider-onboarding program. The raise explicitly funds onboarding more model, data, and API providers. That is a supply-side DevRel motion with its own audience and its own metric, and it does not exist yet.",
    "cards": [
     {
      "label": "Instrument + honesty",
@@ -419,7 +289,7 @@
    "id": "roadmap",
    "kicker": "ROADMAP TO v2",
    "heading": "Turning a 150x spike into a program that compounds",
-   "body_md": "AISA is funded (US$6.5M to date, a new seed co-led by Alibaba and Tribe Capital), grew registered agents 150x and calls plus transactions 200x from Feb to Jun 2026 with no paid marketing, ranks #1 seller and #1 server on the x402 public leaderboard, and has Impossible Finance as a named production customer. The `/models` page renders 101 models across 13 providers, live. The only open glitch is the logged-out \"Recommended\" preset 404, which is minor.\n\nSo the gap is not traffic. It is a developer brand and community loop (no Discord loop, no showcase, almost no public builder stories behind 50,000 agents), activation depth (turning registered agents into multi-capability, paying agents), two-sided provider supply (the raise explicitly funds onboarding more model, data, and API providers), and an enterprise-controls GTM (budgets, approvals, audit). This ladder is how $6.5M and 150x traction become durable adoption instead of a plateau.\n\nNorth star: Weekly Active Agents making multi-capability calls, a model route plus at least one data-API family in the same week, payment-weighted once x402 reaches GA at v1.3. Not signups. Not followers. Every KPI below is an activation-funnel metric, and every exit gate is a hard number that must clear before the next release starts.",
+   "body_md": "The gap is not traffic. It is a developer brand and community loop (no Discord loop, no showcase, almost no public builder stories behind 50,000 agents), activation depth (turning registered agents into multi-capability, paying agents), two-sided provider supply (the raise explicitly funds onboarding more model, data, and API providers), and an enterprise-controls GTM (budgets, approvals, audit). This ladder is how $6.5M and 150x traction become durable adoption instead of a plateau.\n\nEvery KPI below is an activation-funnel metric, and every exit gate is a hard number that must clear before the next release starts.",
    "stats": [
     {
      "value": "v0.1–v0.3",
@@ -494,28 +364,6 @@
    "kicker": "Metrics that matter",
    "heading": "One north star: Weekly Active Agents making multi-capability calls",
    "body_md": "A Weekly Active Agent is one that routes a model call and hits at least one data-API family in the same week. That AND is the whole point. Once x402 is GA we weight it by settled spend, so the number tracks agents that actually pay, not agents that merely exist. Signups and followers are not on this page.\n\nThe baseline is real and it is big: 50,000+ registered agents with zero paid marketing, 150x agent growth and 200x call plus transaction growth from Feb to Jun 2026, and the #1 seller and #1 server slots on the x402 public leaderboard. Registration is not the problem. Depth is. The job of DevRel is to move agents down the funnel below, from registered to multi-capability to paying, and to bring provider supply in behind them.\n\nEach funnel stage below has exactly one KPI we will defend, plus the vanity metric we refuse to report in its place. If a number can go up while real usage stays flat, it does not ship in the dashboard.",
-   "stats": [
-    {
-     "value": "50,000+",
-     "label": "Registered agents",
-     "sub": "Zero paid marketing to date"
-    },
-    {
-     "value": "150x",
-     "label": "Agent growth, Feb to Jun 2026",
-     "sub": "Registered agent users"
-    },
-    {
-     "value": "200x",
-     "label": "Calls + transactions growth",
-     "sub": "Aggregate, same window"
-    },
-    {
-     "value": "#1",
-     "label": "x402 seller and server",
-     "sub": "Public leaderboard, both slots"
-    }
-   ],
    "table": [
     [
      "Stage",
@@ -636,7 +484,7 @@
    "id": "swot",
    "kicker": "Honest read",
    "heading": "Where AISA actually stands",
-   "body_md": "The honest read against OpenRouter and Vercel AI Gateway starts with what is now proven. AISA announced $6.5M raised to date, with a new seed co-led by Alibaba and Tribe (Draper, Sumitomo, Saison in the round), grew registered agents 150x and calls-plus-transactions 200x from Feb to Jun, sits at #1 seller and #1 server on the x402 leaderboard, and has a named customer in Impossible Finance. The /models page serves 101 models across 13 providers. The wedge is proven, not theoretical.\n\nThe DevRel job is turning 50k registered agents into a visible builder community and into the north-star metric that matters: Weekly Active Agents making multi-capability calls (a model route plus at least one data-API family in the same week), payment-weighted once x402 goes GA. The strengths below are real leverage; the weaknesses are where a spike quietly plateaus if nobody runs the community and supply-side motion.",
+   "body_md": "The honest read against OpenRouter and Vercel AI Gateway starts with what is now proven. The DevRel job is turning 50k registered agents into a visible builder community and into the north-star metric that matters. The strengths below are real leverage; the weaknesses are where a spike quietly plateaus if nobody runs the community and supply-side motion.",
    "cards": [
     {
      "label": "Strength",
@@ -719,66 +567,6 @@
      "detail": "Selling spend controls to enterprises means clearing a security, reliability, and audit bar that a fast-moving beta has not yet proven. Miss it and the enterprise motion the raise is funding stalls before it starts."
     }
    ],
-   "stats": [
-    {
-     "value": "$6.5M",
-     "label": "Raised to date",
-     "sub": "Alibaba + Tribe co-led seed"
-    },
-    {
-     "value": "150x / 200x",
-     "label": "Users / calls + txns",
-     "sub": "Feb to Jun 2026, no paid marketing"
-    },
-    {
-     "value": "#1 / #1",
-     "label": "x402 seller and server",
-     "sub": "Public leaderboard, top of both"
-    },
-    {
-     "value": "101 + ~650",
-     "label": "Models + data/action endpoints",
-     "sub": "13 providers, 14 API families, one key"
-    }
-   ],
-   "table": [
-    [
-     "Dimension",
-     "AISA",
-     "OpenRouter",
-     "Vercel AI Gateway"
-    ],
-    [
-     "Positioning",
-     "Resource + transaction network",
-     "Model router",
-     "Model router + observability"
-    ],
-    [
-     "Model gateway",
-     "101 models / 13 providers",
-     "Yes",
-     "Yes"
-    ],
-    [
-     "Data & action APIs",
-     "~650 endpoints / 14 families",
-     "No",
-     "No"
-    ],
-    [
-     "Autonomous payments",
-     "x402 #1, Circle/Visa/Stripe (beta)",
-     "No",
-     "No"
-    ],
-    [
-     "Agent-native distribution",
-     "41 skills + dabl.club channel",
-     "Limited",
-     "Limited"
-    ]
-   ],
    "title": "SWOT"
   },
   {
@@ -786,7 +574,7 @@
    "kicker": "The Engagement",
    "title": "Engagement",
    "heading": "Fractional Head of DevRel. One metric, three tiers.",
-   "body_md": "One operator owns **Activation** end to end and assists on Awareness. The work is what this whole proposal describes: instrument the signup-to-first-multi-capability-call funnel, ship the flagship 10-minute real-agent tutorial and per-framework quickstarts, baseline and move agent share-of-voice, run office hours, and stand up the community and provider-onboarding motions as the tiers scale.\n\nOne number governs all of it. North star: **Weekly Active Agents making multi-capability calls** (a model route plus at least one data-API family in the same week), payment-weighted once x402 is GA. Not signups, not followers.\n\nRate is a flat **$150/hr** across tiers, hours shown. The **Pilot** is one month and ends on a measured activation baseline; **Standard** runs the v0.1-v0.3 activation arc; **Embedded** adds the community loop, supply-side provider onboarding, and the payments-narrative GTM. A **performance option** on any tier swaps part of the retainer for a success fee per net-new activated agent and per provider onboarded.",
+   "body_md": "One operator owns **Activation** end to end and assists on Awareness. The scope is the program above; the tiers below set how much of it runs at once.\n\nRate is a flat **$150/hr** across tiers, hours shown. The **Pilot** is one month and ends on a measured activation baseline; **Standard** runs the v0.1-v0.3 activation arc; **Embedded** adds the community loop, supply-side provider onboarding, and the payments-narrative GTM. A **performance option** on any tier swaps part of the retainer for a success fee per net-new activated agent and per provider onboarded.",
    "stats": [
     {
      "value": "$150/hr",
@@ -848,11 +636,6 @@
    ],
    "cards": [
     {
-     "label": "Pilot",
-     "title": "One month, ends on a baseline",
-     "detail": "The Pilot delivers the instrumented funnel, the flagship tutorial, and the agent share-of-voice baseline, then reports the activation number. Renewal into Standard is gated on that number, not on a pitch."
-    },
-    {
      "label": "Owns",
      "title": "Activation, with an Awareness assist",
      "detail": "Primary: raise the share of registered agents that make a first multi-capability call and ship a real integration. Secondary: the flagship tutorial + SEO/GEO content that ranks and feeds qualified signups. Everything ladders to Weekly Active Agents, payment-weighted."
@@ -868,6 +651,19 @@
      "detail": "Pilot renews only at or above the 20% activation gate. If the API, /models, or docs stay broken past 72 continuous hours, work pauses and the fee prorates. 30 days written notice ends any tier, either side, any reason."
     }
    ]
+  },
+  {
+   "id": "next",
+   "kicker": "Next step",
+   "title": "Next step",
+   "heading": "A 20-minute working session, then the pilot",
+   "body_md": "Before any money changes hands: a **free 20-minute working session** where I walk through the funnel-instrumentation plan and the dogfooding findings live. If it is not obviously worth $6,000 after that call, we stop there.\n\nThe pilot itself runs one month and ends with three things in hand: the activation funnel instrumented end to end, the flagship 10-minute real-agent tutorial shipped, and an agent share-of-voice baseline — reported as one activation number that gates whether we continue.",
+   "contact": {
+    "name": "Colin Lowenberg",
+    "org": "Dabl Club LLC",
+    "email": "collin@dabl.club",
+    "github": "https://github.com/opencolin"
+   }
   }
  ],
  "links": {

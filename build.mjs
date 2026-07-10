@@ -28,16 +28,63 @@ const card = (c, i) => `<article class="card"><div class="card-label">${c.n != n
 function table(rows) {
   if (!rows || !rows.length) return "";
   const [head, ...body] = rows;
-  return `<div class="tablewrap"><table><thead><tr>${head.map((h) => `<th>${inline(h)}</th>`).join("")}</tr></thead><tbody>${body.map((r) => `<tr>${r.map((c) => `<td>${inline(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  return `<div class="tablewrap"><table><thead><tr>${head.map((h) => `<th>${inline(h)}</th>`).join("")}</tr></thead><tbody>${body.map((r) => `<tr${/^Pilot\b/.test(r[0]) ? ' class="hl"' : ""}>${r.map((c) => `<td>${inline(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
 
+// SWOT as a 2x2 quadrant grid instead of a card wall
+function quad(cards) {
+  const groups = [["Strength", "Strengths", "S", "q-s"], ["Weakness", "Weaknesses", "W", "q-w"], ["Opportunity", "Opportunities", "O", "q-o"], ["Threat", "Threats", "T", "q-t"]];
+  return `<div class="quad">${groups.map(([label, plural, letter, cls]) => {
+    const items = cards.filter((c) => c.label.toLowerCase().startsWith(label.toLowerCase()));
+    if (!items.length) return "";
+    return `<div class="q ${cls}"><div class="q-head"><span class="q-letter">${letter}</span>${plural}</div><ul>${items.map((c) => `<li><strong>${inline(c.title)}</strong><span>${inline(c.detail)}</span></li>`).join("")}</ul></div>`;
+  }).join("")}</div>`;
+}
+
+// Roadmap table -> phased vertical timeline
+function timeline(rows) {
+  const arcs = [[/^v0\.[123]/, "FIX & ACTIVATE"], [/^v0\.5|^v1\.0/, "SCALE THE LOOP"], [/^v1\.3|^v2\.0/, "MONETIZE & COMPOUND"]];
+  let lastArc = "";
+  return `<div class="tl">${rows.slice(1).map((r) => {
+    const [rel, theme, kpi, gate] = r;
+    const ver = rel.split(" — ")[0].trim();
+    const name = (rel.split(" — ")[1] || "").trim();
+    const arc = (arcs.find(([re]) => re.test(ver)) || [null, ""])[1];
+    const arcHead = arc !== lastArc ? `<div class="tl-arc">${arc}</div>` : "";
+    lastArc = arc;
+    return `${arcHead}<div class="tl-item"><div class="tl-ver">${inline(ver)}</div><div class="tl-body"><h3>${inline(name)}</h3><p>${inline(theme)}</p><div class="tl-meta"><span><em>KPI</em> ${inline(kpi)}</span><span><em>Exit gate</em> ${inline(gate)}</span></div></div></div>`;
+  }).join("")}</div>`;
+}
+
+// Metrics table -> stepped funnel: kept KPI vs refused vanity metric
+function funnel(rows) {
+  const n = rows.length - 1;
+  return `<div class="funnel">${rows.slice(1).map((r, i) => {
+    const [stage, kpi, vanity] = r;
+    const w = 100 - i * (44 / Math.max(1, n - 1));
+    return `<div class="fstep" style="width:${w.toFixed(1)}%"><div class="f-stage">${inline(stage)}</div><div class="f-kpi">${inline(kpi)}</div><div class="f-no">not ${inline(vanity)}</div></div>`;
+  }).join("")}</div>`;
+}
+
+const pullquote = (q) => q ? `<blockquote class="pull"><p>${inline(q.text)}</p><cite>${inline(q.attribution)}</cite></blockquote>` : "";
+
+const contactBlock = (ct) => ct ? `<div class="contact">
+  <a class="btn btn-primary btn-lg" href="mailto:${ct.email}?subject=AISA%20DevRel%20%E2%80%94%20working%20session">Book the working session</a>
+  <div class="contact-meta"><strong>${inline(ct.name)}</strong> · ${inline(ct.org)} · <a href="mailto:${ct.email}">${ct.email}</a> · <a href="${ct.github}">GitHub</a></div>
+</div>` : "";
+
 function section(s) {
-  const cards = s.cards?.length ? `<div class="cards ${s.cards.length >= 4 ? "cards-4" : "cards-3"}">${s.cards.map(card).join("")}</div>` : "";
+  const cards = s.cards?.length
+    ? (s.id === "swot" ? quad(s.cards) : `<div class="cards ${s.cards.length >= 4 ? "cards-4" : "cards-3"}">${s.cards.map(card).join("")}</div>`)
+    : "";
   const stats = s.stats?.length ? `<div class="stats">${s.stats.map(stat).join("")}</div>` : "";
+  const tbl = s.id === "roadmap" ? timeline(s.table || []) : s.id === "metrics" ? funnel(s.table || []) : table(s.table);
   return `<section id="${s.id}" class="sec">
     <div class="sec-head"><span class="kicker">${inline(s.kicker || s.title)}</span><h2>${inline(s.heading || s.title)}</h2></div>
     ${s.body_md ? `<div class="prose">${md(s.body_md)}</div>` : ""}
-    ${stats}${cards}${table(s.table)}
+    ${pullquote(s.quote)}
+    ${stats}${cards}${tbl}
+    ${contactBlock(s.contact)}
   </section>`;
 }
 
@@ -51,7 +98,7 @@ function roadmap(releases) {
 
 const navItems = [
   ["setup", "Setup"], ["funding", "Why now"], ["wedge", "Wedge"], ["honesty", "Field notes"], ["programs", "Initiatives"],
-  ["roadmap", "Roadmap"], ["metrics", "Metrics"], ["stack", "Stack"], ["swot", "SWOT"], ["engagement", "Engagement"],
+  ["roadmap", "Roadmap"], ["metrics", "Metrics"], ["stack", "Stack"], ["swot", "SWOT"], ["engagement", "Engagement"], ["next", "Next step"],
 ].filter(([id]) => C.sections.some((s) => s.id === id) || id === "ladder" || id === "roadmap");
 
 const order = C.plan?.section_order?.length ? C.plan.section_order : C.sections.map((s) => s.id);
@@ -91,13 +138,14 @@ ${hero.funding_line ? `<a class="newsbar" href="${C.links?.news || "https://aisa
       <span class="kicker">${inline(hero.kicker || "DevRel proposal · v1 · outside-in")}</span>
       <h1>${inline(hero.headline || "A DevRel program for the agent economy.")}</h1>
       <p class="lede">${inline(hero.subhead || "")}</p>
-      <div class="hero-ctas">${(hero.ctas || ["Read the strategy", "See the roadmap"]).map((c, i) => `<a class="btn ${i === 0 ? "btn-primary" : ""}" href="#${["setup", "metrics", "engagement"][i] || "setup"}">${inline(c)}</a>`).join("")}</div>
+      <div class="hero-ctas">${(hero.ctas || ["Read the strategy", "See the roadmap"]).map((c, i) => `<a class="btn ${i === 0 ? "btn-primary" : ""}" href="#${["next", "setup", "metrics"][i] || "setup"}">${inline(c)}</a>`).join("")}</div>
       <div class="hero-meta">${(hero.metaline || []).map((m) => `<span>${inline(m)}</span>`).join("")}</div>
       <div class="northstar"><span class="ns-l">North star</span> ${inline(C.plan?.north_star || C.north_star || "")}</div>
     </header>
     ${orderedSections.map(section).join("\n")}
     <footer class="foot">
       <p>${inline(C.footer || "AISA DevRel strategy · outside-in proposal.")}</p>
+      <p class="foot-contact"><strong>Colin Lowenberg</strong> · Dabl Club LLC · <a href="mailto:collin@dabl.club">collin@dabl.club</a></p>
       <p class="foot-sub">Built by a DevRel leader who shaped the developer program at Cisco Meraki, led DevRel at MetaMask, and brings an ~86k-developer community. Source: <a href="${C.links?.repo || "#"}">GitHub</a>.</p>
     </footer>
   </main>
@@ -161,7 +209,7 @@ main{padding:0 clamp(24px,5vw,72px) 90px;min-width:0}
 /* sections */
 .sec{padding:64px 0;border-bottom:1px solid var(--line)}
 .sec-head{margin-bottom:22px}
-.sec-head h2{font-family:var(--disp);font-weight:600;font-size:clamp(24px,3vw,34px);letter-spacing:-.01em;margin:10px 0 0}
+.sec-head h2{font-family:var(--disp);font-weight:700;font-size:clamp(26px,3.4vw,38px);letter-spacing:-.015em;margin:10px 0 0;color:#fff}
 .prose{color:var(--mut);max-width:74ch;font-size:15.5px}
 .prose p{margin:0 0 14px}
 .prose ul{margin:0 0 14px;padding-left:18px}.prose li{margin:6px 0}
@@ -182,7 +230,7 @@ main{padding:0 clamp(24px,5vw,72px) 90px;min-width:0}
 .card:hover{border-color:rgba(60,224,208,.35);transform:translateY(-2px)}
 .card-label{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--acc);display:flex;align-items:center;gap:8px}
 .card-n{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:6px;background:rgba(60,224,208,.14);color:var(--acc);font-size:11px}
-.card h3{font-family:var(--disp);font-weight:600;font-size:17px;margin:12px 0 8px;color:var(--ink)}
+.card h3{font-family:var(--disp);font-weight:650;font-size:17.5px;margin:12px 0 8px;color:#fff}
 .card p{margin:0;font-size:14px;color:var(--mut)}
 /* table */
 .tablewrap{margin-top:24px;overflow-x:auto;border:1px solid var(--line);border-radius:14px}
@@ -199,11 +247,61 @@ td{color:var(--mut)}tr:last-child td{border-bottom:none}td:first-child{color:var
 .rung-goal{margin:0 0 10px;color:var(--mut);font-size:14px}
 .rung ul{margin:0;padding-left:16px;color:var(--dim);font-size:13.5px;columns:2;column-gap:28px}
 .rung li{margin:4px 0}
+/* section rhythm: alternate band tint */
+.sec:nth-of-type(even){background:linear-gradient(180deg,rgba(255,255,255,.015),rgba(255,255,255,.015));margin:0 clamp(-24px,-5vw,-72px);padding-left:clamp(24px,5vw,72px);padding-right:clamp(24px,5vw,72px)}
+/* pull quote */
+.pull{margin:28px 0;padding:26px 30px;border-left:3px solid var(--acc);background:linear-gradient(90deg,rgba(60,224,208,.07),transparent 70%);border-radius:0 14px 14px 0}
+.pull p{margin:0;font-family:var(--disp);font-size:clamp(18px,2vw,23px);font-weight:500;line-height:1.4;color:var(--ink)}
+.pull cite{display:block;margin-top:12px;font-style:normal;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--acc)}
+/* SWOT quadrant */
+.quad{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.q{border:1px solid var(--line);border-radius:14px;padding:20px 22px;background:var(--panel)}
+.q-s{border-top:2px solid #3ce08f}.q-w{border-top:2px solid var(--warn)}.q-o{border-top:2px solid var(--acc2)}.q-t{border-top:2px solid #ff7b72}
+.q-head{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.q-letter{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:7px;font-size:12px;font-weight:600;background:rgba(255,255,255,.06);color:var(--ink)}
+.q-s .q-letter{background:rgba(60,224,143,.16);color:#3ce08f}.q-w .q-letter{background:rgba(255,180,84,.16);color:var(--warn)}
+.q-o .q-letter{background:rgba(124,140,255,.16);color:var(--acc2)}.q-t .q-letter{background:rgba(255,123,114,.16);color:#ff7b72}
+.q ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.q li strong{display:block;font-size:13.5px;color:var(--ink);font-weight:600;margin-bottom:2px}
+.q li span{font-size:12.5px;color:var(--dim);line-height:1.5}
+/* roadmap timeline */
+.tl{margin-top:26px;position:relative;padding-left:10px}
+.tl-arc{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--acc);margin:26px 0 10px;padding-left:76px}
+.tl-arc:first-child{margin-top:0}
+.tl-item{display:grid;grid-template-columns:66px 1fr;gap:18px;padding:14px 0 14px 10px;position:relative}
+.tl-item::before{content:"";position:absolute;left:76px;top:0;bottom:0;width:1px;background:var(--line)}
+.tl-ver{font-family:var(--mono);font-size:13.5px;font-weight:500;color:var(--acc);text-align:right;padding-top:2px}
+.tl-body{padding-left:22px;position:relative}
+.tl-body::before{content:"";position:absolute;left:-4.5px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--acc);box-shadow:0 0 10px rgba(60,224,208,.5)}
+.tl-body h3{font-family:var(--disp);font-weight:600;font-size:16.5px;margin:0 0 4px;color:var(--ink)}
+.tl-body p{margin:0 0 8px;font-size:13.5px;color:var(--mut)}
+.tl-meta{display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:var(--dim)}
+.tl-meta em{font-style:normal;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc2);margin-right:6px}
+/* metrics funnel */
+.funnel{display:flex;flex-direction:column;gap:8px;margin-top:26px}
+.fstep{min-width:min(100%,520px);background:linear-gradient(90deg,rgba(60,224,208,.10),var(--panel) 55%);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:10px;padding:13px 18px}
+.f-stage{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+.f-kpi{font-size:14px;color:var(--ink);font-weight:500;margin:4px 0 2px}
+.f-no{font-size:12.5px;color:rgba(255,255,255,.3);text-decoration:line-through;text-decoration-color:rgba(255,123,114,.5)}
+/* contact / next step */
+.contact{margin-top:30px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.btn-lg{font-size:16px;padding:15px 28px;border-radius:12px}
+.contact-meta{font-size:14px;color:var(--mut)}
+.contact-meta a{color:var(--acc)}
+/* engagement pilot emphasis */
+tr.hl td{background:rgba(60,224,208,.06)}
+tr.hl td:first-child{color:var(--acc);font-weight:600}
 /* footer */
 .foot{padding:48px 0 0;color:var(--dim);font-size:13.5px}
+.foot-contact{margin:0 0 6px;color:var(--mut)}
+.foot-contact a{color:var(--acc)}
 .foot-sub{color:rgba(255,255,255,.32);margin-top:8px;font-size:12.5px}
 .foot a{color:var(--acc)}
 @media(max-width:860px){
+  .quad{grid-template-columns:1fr}
+  .tl-arc{padding-left:0}
+  .tl-item{grid-template-columns:52px 1fr}
+  .tl-item::before{left:62px}
   .shell{grid-template-columns:1fr}
   .side{position:static;height:auto;flex-direction:row;flex-wrap:wrap;align-items:center;border-right:none;border-bottom:1px solid var(--line);padding:16px 20px;gap:12px}
   .side nav{flex-direction:row;flex-wrap:wrap;margin:0}.side-foot{flex-direction:row;margin:0}
