@@ -91,7 +91,7 @@ ${hero.funding_line ? `<a class="newsbar" href="${C.links?.news || "https://aisa
       <span class="kicker">${inline(hero.kicker || "DevRel proposal · v1 · outside-in")}</span>
       <h1>${inline(hero.headline || "A DevRel program for the agent economy.")}</h1>
       <p class="lede">${inline(hero.subhead || "")}</p>
-      <div class="hero-ctas">${(hero.ctas || ["Read the strategy", "See the roadmap"]).map((c, i) => `<a class="btn ${i === 0 ? "btn-primary" : ""}" href="#${i === 0 ? "setup" : "roadmap"}">${inline(c)}</a>`).join("")}</div>
+      <div class="hero-ctas">${(hero.ctas || ["Read the strategy", "See the roadmap"]).map((c, i) => `<a class="btn ${i === 0 ? "btn-primary" : ""}" href="#${["setup", "metrics", "engagement"][i] || "setup"}">${inline(c)}</a>`).join("")}</div>
       <div class="hero-meta">${(hero.metaline || []).map((m) => `<span>${inline(m)}</span>`).join("")}</div>
       <div class="northstar"><span class="ns-l">North star</span> ${inline(C.plan?.north_star || C.north_star || "")}</div>
     </header>
