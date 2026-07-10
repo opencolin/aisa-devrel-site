@@ -784,18 +784,19 @@
   {
    "id": "engagement",
    "kicker": "The Engagement",
-   "heading": "Fractional Head of DevRel, scoped to activation and priced to de-risk",
-   "body_md": "You are not buying a broken-funnel rescue anymore. The `/models` P0 is fixed (101 models, 13 providers render), you closed $6.5M with a new seed co-led by Alibaba and Tribe Capital, agents grew 150x and calls plus transactions grew 200x from Feb to Jun, and you sit atop the x402 leaderboard with Impossible Finance shipping on the platform. The raise is what makes a real DevRel motion fundable. This SOW is how you turn that spike into durable adoption instead of a plateau.\n\nThe gap now is depth and surface, not signups: 50,000+ registered agents but no public builder stories, no community loop, and thin conversion from registered to multi-capability paying. So the engagement owns one number. North star: Weekly Active Agents making multi-capability calls (a model route plus at least one data-API family in the same week), payment-weighted once x402 goes GA. Not signups, not followers. Three tiers at $150/hr blended, month-to-month exit either way. Start with the Pilot: it de-risks the whole thesis before you commit a quarter or a half-year.",
+   "title": "Engagement",
+   "heading": "Priced to de-risk, not to impress. Start at $6K, prove it, then scale.",
+   "body_md": "Straight talk, because you have seen a version of this before. An earlier proposal came in at **$34,000 for six weeks, fixed scope, 40% ($13,600) due on signing** — a documentation suite, three workshops, and three integrations, priced as one lump before anything was proven. It was fair to pass on that. It asked for a big commitment up front and tied spend to deliverables instead of outcomes.\n\nThis is restructured around one idea: **de-risk first.** Start with a **$6,000, one-month pilot** that ends on a measurable activation baseline — the /models-to-first-multi-capability-call funnel instrumented, the flagship 10-minute tutorial shipped, and agent share-of-voice baselined. Continue only if it clears the gate. You just raised $6.5M; a $6K proof-of-value is a rounding error to learn whether the activation motion works before committing a quarter. No $13.6K signing check, no fixed six-week bet.\n\nOne number governs all of it. North star: **Weekly Active Agents making multi-capability calls** (a model route plus at least one data-API family in the same week), payment-weighted once x402 is GA. Not signups, not followers. Rate is a flat **$150/hr** across tiers, hours shown, no retainer padding. And a **performance option** lets you swap part of the retainer for a success fee tied to net-new activated agents and provider onboards, so your spend tracks the metric, not the clock.",
    "stats": [
     {
-     "value": "$150/hr",
-     "label": "Blended rate, all tiers",
-     "sub": "Hours math shown, no retainer padding"
+     "value": "$6K",
+     "label": "Pilot entry, 1 month",
+     "sub": "vs a $34K fixed package last time"
     },
     {
-     "value": "3 tiers",
-     "label": "Pilot / Standard / Embedded",
-     "sub": "Standard recommended"
+     "value": "$150/hr",
+     "label": "Flat rate, all tiers",
+     "sub": "Hours shown, no padding"
     },
     {
      "value": "<20%",
@@ -814,53 +815,59 @@
      "Length",
      "Investment",
      "Hrs/wk",
-     "Scope"
+     "What it buys"
     ],
     [
-     "Pilot",
+     "Pilot (start here)",
      "1 month",
      "$6,000",
      "10",
-     "Docs surgery + flagship 10-min real-agent tutorial. Proves the activation motion before you commit."
+     "Funnel instrumented + flagship 10-min real-agent tutorial + agent-SOV baseline. Proof before you commit."
     ],
     [
      "Standard (recommended)",
      "3 months",
      "$36,000",
      "20",
-     "Pilot + per-framework sample-app program + weekly office hours. The core activation engine."
+     "Pilot + per-framework sample-app program + weekly office hours. The core activation engine (v0.1-v0.3)."
     ],
     [
      "Embedded",
      "6 months",
      "$90,000",
      "25",
-     "All of the above + community loop (Discord, showcase, leaderboard) + payments-narrative and provider-supply GTM."
+     "All of the above + community loop (Discord, showcase) + supply-side provider onboarding + payments-narrative GTM."
+    ],
+    [
+     "Performance option",
+     "any tier",
+     "lower base + success fee",
+     "--",
+     "Swap up to ~30% of the retainer for a fee per net-new activated multi-capability agent + per provider onboarded. Spend tracks the north star."
     ]
    ],
    "cards": [
     {
+     "label": "Why it's different this time",
+     "title": "Small first step, outcome-gated",
+     "detail": "Last time: $34K fixed, 40% upfront, six weeks, priced on deliverables. This time: a $6K pilot that must clear a real activation gate before it renews, a flat hourly rate with the math shown, and a performance option so you can tie spend to results. The pilot is designed to be an easy yes against a $6.5M raise."
+    },
+    {
      "label": "Owns",
      "title": "Activation, with an Awareness assist",
-     "detail": "Primary: raise the share of registered agents that make a first successful multi-capability call and ship a real integration. Secondary: a flagship tutorial plus SEO how-tos that rank for target queries and feed qualified signups. Everything ladders to Weekly Active Agents, payment-weighted."
+     "detail": "Primary: raise the share of registered agents that make a first multi-capability call and ship a real integration. Secondary: the flagship tutorial + SEO/GEO content that ranks and feeds qualified signups. Everything ladders to Weekly Active Agents, payment-weighted."
     },
     {
      "label": "Does not own",
-     "title": "The things a DevRel lead should not be holding",
-     "detail": "Not the product bug backlog (we report and spec, eng fixes). Not paid-ads buying. Not brand, PR, or analyst relations. Not the sales and enterprise-contract motion. Not 24/7 community moderation. We build the plumbing and cadence, not round-the-clock ops."
+     "title": "What a DevRel lead should not hold",
+     "detail": "Not the product bug backlog (we report + spec, eng fixes). Not paid-ads buying. Not brand/PR/analyst relations. Not the enterprise sales-contract motion. Not 24/7 community moderation. We build the plumbing and cadence, not round-the-clock ops."
     },
     {
      "label": "Kill-switches",
-     "title": "Written into the SOW, not the fine print",
-     "detail": "Pilot gate: if 7-day activation stays under 20% thirty days after the flagship tutorial ships, the engagement does not auto-renew. Dev-surface outage: if the API, /models, or docs stay broken past 72 continuous hours, work pauses and the fee prorates. Mutual exit: 30 days written notice, either side, any reason."
-    },
-    {
-     "label": "Day-one channel",
-     "title": "An attributed audience, not a cold start",
-     "detail": "The proposer built the developer program at Cisco Meraki and led DevRel at MetaMask, and brings ~86k developers (dabl.club, 36-40% open rate) as an attributed channel from week one. Distribution is not a Q2 problem to solve later."
+     "title": "Cheap to stop, in writing",
+     "detail": "Pilot gate: if 7-day activation stays under 20% thirty days after the flagship tutorial ships, no auto-renew. Dev-surface outage: if the API, /models, or docs stay broken past 72 continuous hours, work pauses and the fee prorates. Mutual exit: 30 days notice, either side, any reason."
     }
-   ],
-   "title": "Engagement"
+   ]
   }
  ],
  "links": {
