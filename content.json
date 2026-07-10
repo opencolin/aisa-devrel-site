@@ -656,8 +656,8 @@
    "id": "next",
    "kicker": "Next step",
    "title": "Next step",
-   "heading": "A 20-minute working session, then the pilot",
-   "body_md": "Before any money changes hands: a **free 20-minute working session** where I walk through the funnel-instrumentation plan and the dogfooding findings live. If it is not obviously worth $6,000 after that call, we stop there.\n\nThe pilot itself runs one month and ends with three things in hand: the activation funnel instrumented end to end, the flagship 10-minute real-agent tutorial shipped, and an agent share-of-voice baseline — reported as one activation number that gates whether we continue.",
+   "heading": "Scope the pilot",
+   "body_md": "The pilot runs one month and ends with three things in hand: the activation funnel instrumented end to end, the flagship 10-minute real-agent tutorial shipped, and an agent share-of-voice baseline — reported as one activation number that gates whether we continue.\n\nGrab 20 minutes on my calendar and we'll scope it.",
    "contact": {
     "name": "Colin Lowenberg",
     "org": "Dabl Club LLC",
