@@ -50,7 +50,7 @@ function roadmap(releases) {
 }
 
 const navItems = [
-  ["setup", "Setup"], ["wedge", "Wedge"], ["honesty", "Field notes"], ["programs", "Initiatives"],
+  ["setup", "Setup"], ["funding", "Why now"], ["wedge", "Wedge"], ["honesty", "Field notes"], ["programs", "Initiatives"],
   ["roadmap", "Roadmap"], ["metrics", "Metrics"], ["swot", "SWOT"], ["engagement", "Engagement"], ["ladder", "Publish"],
 ].filter(([id]) => C.sections.some((s) => s.id === id) || id === "ladder" || id === "roadmap");
 
@@ -76,6 +76,7 @@ const html = `<!doctype html>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+${hero.funding_line ? `<a class="newsbar" href="${C.links?.news || "https://aisa.one/news/aisa-raises-6-5m-ai-agent-resource-network"}"><span class="nb-tag">New</span> ${inline(hero.funding_line)} <span class="nb-more">Read the announcement →</span></a>` : ""}
 <div class="shell">
   <aside class="side">
     <div class="brand"><span class="dot"></span>AIsa <span class="brand-sub">DevRel</span></div>
@@ -128,6 +129,10 @@ html{scroll-behavior:smooth}
 body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,rgba(124,140,255,.10),transparent 60%),radial-gradient(900px 500px at -10% 10%,rgba(60,224,208,.08),transparent 55%),var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 .skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--acc);color:#00120f;padding:8px 12px;border-radius:8px;z-index:99}
+.newsbar{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px 18px;font-size:13px;color:var(--ink);background:linear-gradient(90deg,rgba(124,140,255,.16),rgba(60,224,208,.16));border-bottom:1px solid var(--line);text-align:center}
+.newsbar:hover{background:linear-gradient(90deg,rgba(124,140,255,.24),rgba(60,224,208,.24))}
+.nb-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;background:var(--acc);color:#00120f;padding:2px 8px;border-radius:999px;font-weight:600}
+.nb-more{color:var(--acc);font-weight:500;white-space:nowrap}
 .shell{display:grid;grid-template-columns:240px 1fr;max-width:1240px;margin:0 auto}
 /* sidebar */
 .side{position:sticky;top:0;height:100vh;padding:34px 22px;display:flex;flex-direction:column;gap:22px;border-right:1px solid var(--line)}
