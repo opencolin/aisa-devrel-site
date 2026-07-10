@@ -785,27 +785,27 @@
    "id": "engagement",
    "kicker": "The Engagement",
    "title": "Engagement",
-   "heading": "Priced to de-risk, not to impress. Start at $6K, prove it, then scale.",
-   "body_md": "This engagement is structured around one idea: **de-risk first.** Start with a **$6,000, one-month pilot** that ends on a measurable activation baseline — the /models-to-first-multi-capability-call funnel instrumented, the flagship 10-minute tutorial shipped, and agent share-of-voice baselined. Continue only if it clears the gate. Against a $6.5M raise, a $6K proof-of-value is a rounding error to learn whether the activation motion works before committing a quarter. No big signing check, no fixed multi-month bet.\n\nOne number governs all of it. North star: **Weekly Active Agents making multi-capability calls** (a model route plus at least one data-API family in the same week), payment-weighted once x402 is GA. Not signups, not followers. Rate is a flat **$150/hr** across tiers, hours shown, no retainer padding. And a **performance option** lets you swap part of the retainer for a success fee tied to net-new activated agents and provider onboards, so your spend tracks the metric, not the clock.",
+   "heading": "Fractional Head of DevRel. One metric, three tiers.",
+   "body_md": "One operator owns **Activation** end to end and assists on Awareness. The work is what this whole proposal describes: instrument the signup-to-first-multi-capability-call funnel, ship the flagship 10-minute real-agent tutorial and per-framework quickstarts, baseline and move agent share-of-voice, run office hours, and stand up the community and provider-onboarding motions as the tiers scale.\n\nOne number governs all of it. North star: **Weekly Active Agents making multi-capability calls** (a model route plus at least one data-API family in the same week), payment-weighted once x402 is GA. Not signups, not followers.\n\nRate is a flat **$150/hr** across tiers, hours shown. The **Pilot** is one month and ends on a measured activation baseline; **Standard** runs the v0.1-v0.3 activation arc; **Embedded** adds the community loop, supply-side provider onboarding, and the payments-narrative GTM. A **performance option** on any tier swaps part of the retainer for a success fee per net-new activated agent and per provider onboarded.",
    "stats": [
-    {
-     "value": "$6K",
-     "label": "Pilot entry, 1 month",
-     "sub": "Prove it before committing a quarter"
-    },
     {
      "value": "$150/hr",
      "label": "Flat rate, all tiers",
-     "sub": "Hours shown, no padding"
+     "sub": "Hours shown in every tier"
     },
     {
-     "value": "<20%",
-     "label": "Pilot kill gate",
-     "sub": "7-day activation below this = no auto-renew"
+     "value": "1 metric",
+     "label": "North star",
+     "sub": "Weekly Active Agents, multi-capability"
+    },
+    {
+     "value": "20%",
+     "label": "Pilot renewal gate",
+     "sub": "7-day activation at or above this to continue"
     },
     {
      "value": "30 days",
-     "label": "Mutual exit notice",
+     "label": "Notice period",
      "sub": "Either side, any reason"
     }
    ],
@@ -818,14 +818,14 @@
      "What it buys"
     ],
     [
-     "Pilot (start here)",
+     "Pilot",
      "1 month",
      "$6,000",
      "10",
-     "Funnel instrumented + flagship 10-min real-agent tutorial + agent-SOV baseline. Proof before you commit."
+     "Instrumented funnel + flagship 10-min real-agent tutorial + agent-SOV baseline, reported as an activation number."
     ],
     [
-     "Standard (recommended)",
+     "Standard",
      "3 months",
      "$36,000",
      "20",
@@ -848,9 +848,9 @@
    ],
    "cards": [
     {
-     "label": "Structure",
-     "title": "Small first step, outcome-gated",
-     "detail": "A $6K pilot that must clear a real activation gate before it renews, a flat hourly rate with the math shown, and a performance option that ties spend to results. Scale to Standard or Embedded only after the pilot proves the motion."
+     "label": "Pilot",
+     "title": "One month, ends on a baseline",
+     "detail": "The Pilot delivers the instrumented funnel, the flagship tutorial, and the agent share-of-voice baseline, then reports the activation number. Renewal into Standard is gated on that number, not on a pitch."
     },
     {
      "label": "Owns",
@@ -863,9 +863,9 @@
      "detail": "Not the product bug backlog (we report + spec, eng fixes). Not paid-ads buying. Not brand/PR/analyst relations. Not the enterprise sales-contract motion. Not 24/7 community moderation. We build the plumbing and cadence, not round-the-clock ops."
     },
     {
-     "label": "Kill-switches",
-     "title": "Cheap to stop, in writing",
-     "detail": "Pilot gate: if 7-day activation stays under 20% thirty days after the flagship tutorial ships, no auto-renew. Dev-surface outage: if the API, /models, or docs stay broken past 72 continuous hours, work pauses and the fee prorates. Mutual exit: 30 days notice, either side, any reason."
+     "label": "Terms",
+     "title": "Plain terms, in writing",
+     "detail": "Pilot renews only at or above the 20% activation gate. If the API, /models, or docs stay broken past 72 continuous hours, work pauses and the fee prorates. 30 days written notice ends any tier, either side, any reason."
     }
    ]
   }
