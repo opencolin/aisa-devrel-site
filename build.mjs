@@ -146,7 +146,7 @@ ${hero.funding_line ? `<a class="newsbar" href="${C.links?.news || "https://aisa
     <footer class="foot">
       <p>${inline(C.footer || "AISA DevRel strategy · outside-in proposal.")}</p>
       <p class="foot-contact"><strong>Colin Lowenberg</strong> · Dabl Club LLC · <a href="mailto:collin@dabl.club">collin@dabl.club</a></p>
-      <p class="foot-sub">Built by a DevRel leader who shaped the developer program at Cisco Meraki, led DevRel at MetaMask, and brings an ~86k-developer community. Source: <a href="${C.links?.repo || "#"}">GitHub</a>.</p>
+      <p class="foot-sub">Built by a DevRel leader who shaped the developer program at Cisco Meraki, led DevRel at MetaMask, and brings an 85,000-subscriber agent-space newsletter. Source: <a href="${C.links?.repo || "#"}">GitHub</a>.</p>
     </footer>
   </main>
 </div>

@@ -3,7 +3,7 @@
   "hero": {
    "kicker": "DevRel proposal for AISA.one, the resource and transaction network for the AI agent economy",
    "headline": "You raised $6.5M and grew 150x. Now build the developer loop.",
-   "subhead": "AISA is funded, ranked top seller and top server on the x402 agent-payments leaderboard, and adding agents 150x faster than five months ago, all with zero paid marketing. What it does not have yet is a developer brand: no community loop, no builder showcase, and near-zero public stories behind 50,000 registered agents. I'm Colin Lowenberg. I built the developer program at Cisco Meraki, led DevRel at MetaMask, and bring an 86,000-developer channel on day one to turn registered agents into paying, multi-capability ones.",
+   "subhead": "AISA is funded, ranked top seller and top server on the x402 agent-payments leaderboard, and adding agents 150x faster than five months ago, all with zero paid marketing. What it does not have yet is a developer brand: no community loop, no builder showcase, and near-zero public stories behind 50,000 registered agents. I'm Colin Lowenberg. I built the developer program at Cisco Meraki, led DevRel at MetaMask, and bring an 85,000-subscriber newsletter of agent-space builders on day one to turn registered agents into paying, multi-capability ones.",
    "metaline": [
     "50,000+ agents registered with zero paid marketing",
     "150x agent growth and 200x calls plus transactions, Feb to Jun 2026",
@@ -423,8 +423,8 @@
   {
    "id": "stack",
    "kicker": "The DevRel stack",
-   "heading": "Instrumented from day one: agent share-of-voice, developer intent, events",
-   "body_md": "DevRel here runs on a measurement stack, not vibes. Every stage of the DevRel-to-revenue chain gets an instrument. For AISA this matters more than for most: the buyer is often an **agent**, and the moment a developer (or their agent) asks an AI assistant \"what should I use to give my agent models, data, and payments,\" that answer is the new top of the funnel. If AISA is not in the answer, no downstream work can recover a builder who never heard of it.\n\nThree tools, each mapped to a stage. **Sapient** measures and moves agent share-of-voice (does ChatGPT / Perplexity / AI Overviews recommend AISA across its three categories: model gateway, agent data + action APIs, agent payments). **Reo.dev** turns the 50,000+ registered agents from a vanity count into prioritized pipeline: it de-anonymizes signups, scores account intent from real developer activity (docs, API calls, package installs, community), and exposes the developer funnel so activation depth is finally visible. **Luma** runs the events engine: builder nights, hackathons, office hours, and agent-payments demo nights that feed reach, activation, and advocacy.\n\nThe point is attribution you can defend. Own the early stages outright (reach, sourced signups, activation), influence and attribute the late ones (pipeline, net revenue retention), and never report a number that can go up while real usage stays flat.",
+   "heading": "Instrumented from day one: agent share-of-voice, developer intent, an owned audience, events",
+   "body_md": "DevRel here runs on a measurement stack, not vibes. Every stage of the DevRel-to-revenue chain gets an instrument. For AISA this matters more than for most: the buyer is often an **agent**, and the moment a developer (or their agent) asks an AI assistant \"what should I use to give my agent models, data, and payments,\" that answer is the new top of the funnel. If AISA is not in the answer, no downstream work can recover a builder who never heard of it.\n\nFour tools, each mapped to a stage. **Sapient** measures and moves agent share-of-voice (does ChatGPT / Perplexity / AI Overviews recommend AISA across its three categories: model gateway, agent data + action APIs, agent payments). **Reo.dev** turns the 50,000+ registered agents from a vanity count into prioritized pipeline: it de-anonymizes signups, scores account intent from real developer activity (docs, API calls, package installs, community), and exposes the developer funnel so activation depth is finally visible. **Beehiiv** runs the owned audience: dabl.club's 85,000-subscriber newsletter, built entirely from hackathons and events in the agent space, becomes an attributed acquisition and nurture channel from day one. **Luma** runs the events engine: builder nights, hackathons, office hours, and agent-payments demo nights that feed reach, activation, and advocacy.\n\nThe point is attribution you can defend. Own the early stages outright (reach, sourced signups, activation), influence and attribute the late ones (pipeline, net revenue retention), and never report a number that can go up while real usage stays flat.",
    "cards": [
     {
      "label": "Reach · agent SOV",
@@ -437,9 +437,14 @@
      "detail": "Revenue intelligence for developer-focused companies: 625M+ developer activity signals (docs, package installs, APIs, cloud sign-ups, community). De-anonymizes free signups, scores account intent and buying stage, maps the developer funnel, and does community listening. This is how activation DEPTH becomes visible and how the highest-intent accounts get worked first instead of spray-and-pray."
     },
     {
+     "label": "Owned audience",
+     "title": "Beehiiv — 85k agent-space subscribers, day one",
+     "detail": "dabl.club's newsletter runs on Beehiiv: 85,000 subscribers at a 36-40% open rate, built entirely from hackathons and events in the agent space — the exact builders AISA needs, not a generic dev list. Beehiiv's segmentation, referral program, and UTM-attributed sends make it the owned acquisition and nurture channel: launch announcements, tutorial drops, event invites, and win-back campaigns, all attributable down-funnel."
+    },
+    {
      "label": "Community · field",
      "title": "Luma — the events + community engine",
-     "detail": "Runs builder nights, hackathons, office hours, and x402 / agent-payments demo nights (RSVPs, ticketing, guest management, calendars). The recurring field motion that turns the ~86k-dev dabl.club channel and OpenClaw/Hermes tailwinds into showcased, retained builders. Events are lead-gen, not prototype-gen."
+     "detail": "Runs builder nights, hackathons, office hours, and x402 / agent-payments demo nights (RSVPs, ticketing, guest management, calendars). The recurring field motion that turns the dabl.club audience and OpenClaw/Hermes tailwinds into showcased, retained builders. Events are lead-gen, not prototype-gen."
     }
    ],
    "table": [
@@ -455,8 +460,8 @@
     ],
     [
      "Sourced signup",
-     "Signups attributed to content / community / dabl.club; who is behind the signup",
-     "Reo.dev + UTM"
+     "Signups attributed to newsletter / content / community; who is behind the signup",
+     "Beehiiv + Reo.dev + UTM"
     ],
     [
      "Activation (owned)",
@@ -476,7 +481,7 @@
     [
      "Community / advocacy",
      "Events run, showcased builders, retained multi-capability agents",
-     "Luma + showcase"
+     "Luma + Beehiiv + showcase"
     ]
    ]
   },
@@ -504,7 +509,7 @@
     {
      "label": "Strength",
      "title": "A surface no commodity gateway has",
-     "detail": "One key = 101 models across 13 providers (OpenAI-compatible drop-in) plus ~650 data/action endpoints across 14 families, 41 packaged skills, an Alibaba-aligned CN-LLM catalog, and a day-one attributed channel (dabl.club, ~86k devs). Agent-native by design, not retrofitted."
+     "detail": "One key = 101 models across 13 providers (OpenAI-compatible drop-in) plus ~650 data/action endpoints across 14 families, 41 packaged skills, an Alibaba-aligned CN-LLM catalog, and a day-one attributed channel (dabl.club, 85k agent-space subscribers on Beehiiv). Agent-native by design, not retrofitted."
     },
     {
      "label": "Weakness",
