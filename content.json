@@ -25,6 +25,7 @@
    "programs",
    "roadmap",
    "metrics",
+   "stack",
    "swot",
    "engagement"
   ],
@@ -190,6 +191,11 @@
      "label": "The gap",
      "title": "What 50,000 agents still lack",
      "detail": "No Discord loop, no showcase, near-zero public builder stories despite 50k+ registered agents and one named customer in Impossible Finance. Activation is shallow (registered, not multi-capability paying), provider supply is thin, and enterprise controls have no GTM. That gap is the DevRel surface."
+    },
+    {
+     "label": "Press",
+     "title": "Covered in Forbes",
+     "detail": "Forbes (Jul 3, 2026): \"Startup Raises $6.5 Million By Making It Easier For AI Employees To Make Payments Online.\" The agent-as-economic-actor framing is now a mainstream-press narrative, not just a developer thesis, which widens the top of funnel and the enterprise conversation."
     }
    ],
    "title": "Why now"
@@ -567,6 +573,66 @@
    "title": "Metrics that matter"
   },
   {
+   "id": "stack",
+   "kicker": "The DevRel stack",
+   "heading": "Instrumented from day one: agent share-of-voice, developer intent, events",
+   "body_md": "DevRel here runs on a measurement stack, not vibes. Every stage of the DevRel-to-revenue chain gets an instrument. For AISA this matters more than for most: the buyer is often an **agent**, and the moment a developer (or their agent) asks an AI assistant \"what should I use to give my agent models, data, and payments,\" that answer is the new top of the funnel. If AISA is not in the answer, no downstream work can recover a builder who never heard of it.\n\nThree tools, each mapped to a stage. **Sapient** measures and moves agent share-of-voice (does ChatGPT / Perplexity / AI Overviews recommend AISA across its three categories: model gateway, agent data + action APIs, agent payments). **Reo.dev** turns the 50,000+ registered agents from a vanity count into prioritized pipeline: it de-anonymizes signups, scores account intent from real developer activity (docs, API calls, package installs, community), and exposes the developer funnel so activation depth is finally visible. **Luma** runs the events engine: builder nights, hackathons, office hours, and agent-payments demo nights that feed reach, activation, and advocacy.\n\nThe point is attribution you can defend. Own the early stages outright (reach, sourced signups, activation), influence and attribute the late ones (pipeline, NRR), and never report a number that can go up while real usage stays flat.",
+   "cards": [
+    {
+     "label": "Reach · agent SOV",
+     "title": "Sapient — are AI assistants recommending AISA yet?",
+     "detail": "Agent share-of-voice / GEO. Asks buyer-intent prompts across ChatGPT, Perplexity, and Google AI Overviews and tracks brand mentions, position, and citations over time. Headless CLI so a monthly pull runs as a scheduled job; SDK to instrument how agent crawlers read the site + docs (pairs with llms.txt / .md mirrors / A2A). Baseline AISA's SOV across model-gateway, agent-data-API, and agent-payments prompts, then move it. A second surface runs coding-agent evals, adjacent to a future AISA benchmark."
+    },
+    {
+     "label": "Signup to pipeline",
+     "title": "Reo.dev — turn 50k agents into prioritized pipeline",
+     "detail": "Revenue intelligence for developer-focused companies: 625M+ developer activity signals (docs, package installs, APIs, cloud sign-ups, community). De-anonymizes free signups, scores account intent and buying stage, maps the developer funnel, and does community listening. This is how activation DEPTH becomes visible and how the highest-intent accounts get worked first instead of spray-and-pray."
+    },
+    {
+     "label": "Community · field",
+     "title": "Luma — the events + community engine",
+     "detail": "Runs builder nights, hackathons, office hours, and x402 / agent-payments demo nights (RSVPs, ticketing, guest management, calendars). The recurring field motion that turns the ~86k-dev dabl.club channel and OpenClaw/Hermes tailwinds into showcased, retained builders. Events are lead-gen, not prototype-gen."
+    }
+   ],
+   "table": [
+    [
+     "Funnel stage",
+     "Metric that matters",
+     "Instrument"
+    ],
+    [
+     "Reach (agent answer)",
+     "Agent share-of-voice: is AISA in the AI-assistant answer for its 3 categories",
+     "Sapient"
+    ],
+    [
+     "Sourced signup",
+     "Signups attributed to content / community / dabl.club; who is behind the signup",
+     "Reo.dev + UTM"
+    ],
+    [
+     "Activation (owned)",
+     "Share of agents making a multi-capability call within 7 days; time-to-first-real-agent",
+     "Product instrumentation"
+    ],
+    [
+     "Usage depth (north star)",
+     "Weekly Active Agents making multi-capability calls, payment-weighted once x402 GA",
+     "Product + payments"
+    ],
+    [
+     "PQL / pipeline",
+     "Accounts crossing intent + usage thresholds; DevRel-sourced vs influenced $",
+     "Reo.dev + CRM"
+    ],
+    [
+     "Community / advocacy",
+     "Events run, showcased builders, retained multi-capability agents",
+     "Luma + showcase"
+    ]
+   ]
+  },
+  {
    "id": "swot",
    "kicker": "Honest read",
    "heading": "Where AISA actually stands",
@@ -799,7 +865,8 @@
  ],
  "links": {
   "repo": "https://github.com/opencolin/aisa-devrel-site",
-  "news": "https://aisa.one/news/aisa-raises-6-5m-ai-agent-resource-network"
+  "news": "https://aisa.one/news/aisa-raises-6-5m-ai-agent-resource-network",
+  "forbes": "https://www.forbes.com/sites/elainepofeldt/2026/07/03/startup-raises-65-million-by-making-it-easier-for-ai-employees-to-make-payments-online/"
  },
  "footer": "AISA DevRel strategy — an outside-in proposal for the resource and transaction network of the AI agent economy. Funded, 150x, top of x402: now build the developer loop."
 }

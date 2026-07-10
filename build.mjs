@@ -51,7 +51,7 @@ function roadmap(releases) {
 
 const navItems = [
   ["setup", "Setup"], ["funding", "Why now"], ["wedge", "Wedge"], ["honesty", "Field notes"], ["programs", "Initiatives"],
-  ["roadmap", "Roadmap"], ["metrics", "Metrics"], ["swot", "SWOT"], ["engagement", "Engagement"], ["ladder", "Publish"],
+  ["roadmap", "Roadmap"], ["metrics", "Metrics"], ["stack", "Stack"], ["swot", "SWOT"], ["engagement", "Engagement"], ["ladder", "Publish"],
 ].filter(([id]) => C.sections.some((s) => s.id === id) || id === "ladder" || id === "roadmap");
 
 const order = C.plan?.section_order?.length ? C.plan.section_order : C.sections.map((s) => s.id);
