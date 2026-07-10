@@ -69,8 +69,8 @@ function funnel(rows) {
 const pullquote = (q) => q ? `<blockquote class="pull"><p>${inline(q.text)}</p><cite>${inline(q.attribution)}</cite></blockquote>` : "";
 
 const contactBlock = (ct) => ct ? `<div class="contact">
-  <a class="btn btn-primary btn-lg" href="mailto:${ct.email}?subject=AISA%20DevRel%20%E2%80%94%20working%20session">Book the working session</a>
-  <div class="contact-meta"><strong>${inline(ct.name)}</strong> · ${inline(ct.org)} · <a href="mailto:${ct.email}">${ct.email}</a> · <a href="${ct.github}">GitHub</a></div>
+  <a class="btn btn-primary btn-lg" href="${ct.calendar || `mailto:${ct.email}`}">Book the working session</a>
+  <div class="contact-meta"><strong>${inline(ct.name)}</strong> · ${inline(ct.org)} · <a href="mailto:${ct.email}?subject=AISA%20DevRel%20%E2%80%94%20working%20session">${ct.email}</a> · <a href="${ct.github}">GitHub</a></div>
 </div>` : "";
 
 function section(s) {
