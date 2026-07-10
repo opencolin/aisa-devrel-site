@@ -27,6 +27,13 @@ handoff/README.md           # this file
 2. `node build.mjs`
 3. Commit + `vercel --prod` (or push; wire Git integration for auto-deploy).
 
+## Editorial rules (learned the hard way — enforce on every future edit)
+- **No process artifacts in public copy:** no pricing history, negotiation framing, revision narration ("the old plan..."), site-release plans, or agent shorthand. Plan data never renders directly.
+- **No machine-facing data as prose:** no code identifiers (base_url, tRPC, event names), no key:value labels, gloss every abbreviation on first use.
+- **State facts once:** north-star definition lives in hero + Metrics only; funding recap in Setup + Why-now only; one stat scoreboard (Setup).
+- **$6.5M is total raised to date** (seed is a portion), never "a $6.5M seed."
+- Special renderers in build.mjs: SWOT -> quadrant, roadmap table -> timeline, metrics table -> funnel; `quote` -> pull-quote; `contact` -> CTA block.
+
 ## Decisions (don't re-litigate)
 - **Format:** single-page, dark, data-dense proposal microsite modeled on tenki-devrel.
 - **North star:** Weekly Active Agents making multi-capability calls, payment-weighted once x402 GA.
