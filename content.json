@@ -786,12 +786,12 @@
    "kicker": "The Engagement",
    "title": "Engagement",
    "heading": "Priced to de-risk, not to impress. Start at $6K, prove it, then scale.",
-   "body_md": "Straight talk, because you have seen a version of this before. An earlier proposal came in at **$34,000 for six weeks, fixed scope, 40% ($13,600) due on signing** — a documentation suite, three workshops, and three integrations, priced as one lump before anything was proven. It was fair to pass on that. It asked for a big commitment up front and tied spend to deliverables instead of outcomes.\n\nThis is restructured around one idea: **de-risk first.** Start with a **$6,000, one-month pilot** that ends on a measurable activation baseline — the /models-to-first-multi-capability-call funnel instrumented, the flagship 10-minute tutorial shipped, and agent share-of-voice baselined. Continue only if it clears the gate. You just raised $6.5M; a $6K proof-of-value is a rounding error to learn whether the activation motion works before committing a quarter. No $13.6K signing check, no fixed six-week bet.\n\nOne number governs all of it. North star: **Weekly Active Agents making multi-capability calls** (a model route plus at least one data-API family in the same week), payment-weighted once x402 is GA. Not signups, not followers. Rate is a flat **$150/hr** across tiers, hours shown, no retainer padding. And a **performance option** lets you swap part of the retainer for a success fee tied to net-new activated agents and provider onboards, so your spend tracks the metric, not the clock.",
+   "body_md": "This engagement is structured around one idea: **de-risk first.** Start with a **$6,000, one-month pilot** that ends on a measurable activation baseline — the /models-to-first-multi-capability-call funnel instrumented, the flagship 10-minute tutorial shipped, and agent share-of-voice baselined. Continue only if it clears the gate. Against a $6.5M raise, a $6K proof-of-value is a rounding error to learn whether the activation motion works before committing a quarter. No big signing check, no fixed multi-month bet.\n\nOne number governs all of it. North star: **Weekly Active Agents making multi-capability calls** (a model route plus at least one data-API family in the same week), payment-weighted once x402 is GA. Not signups, not followers. Rate is a flat **$150/hr** across tiers, hours shown, no retainer padding. And a **performance option** lets you swap part of the retainer for a success fee tied to net-new activated agents and provider onboards, so your spend tracks the metric, not the clock.",
    "stats": [
     {
      "value": "$6K",
      "label": "Pilot entry, 1 month",
-     "sub": "vs a $34K fixed package last time"
+     "sub": "Prove it before committing a quarter"
     },
     {
      "value": "$150/hr",
@@ -848,9 +848,9 @@
    ],
    "cards": [
     {
-     "label": "Why it's different this time",
+     "label": "Structure",
      "title": "Small first step, outcome-gated",
-     "detail": "Last time: $34K fixed, 40% upfront, six weeks, priced on deliverables. This time: a $6K pilot that must clear a real activation gate before it renews, a flat hourly rate with the math shown, and a performance option so you can tie spend to results. The pilot is designed to be an easy yes against a $6.5M raise."
+     "detail": "A $6K pilot that must clear a real activation gate before it renews, a flat hourly rate with the math shown, and a performance option that ties spend to results. Scale to Standard or Embedded only after the pilot proves the motion."
     },
     {
      "label": "Owns",
